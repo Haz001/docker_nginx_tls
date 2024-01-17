@@ -1,0 +1,10 @@
+services:
+  nginx_tls:
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./cert.crt:/etc/nginx/cert.crt
+      - ./priv.key:/etc/nginx/priv.key
+    ports:
+      - 80:80
+      - 443:443
