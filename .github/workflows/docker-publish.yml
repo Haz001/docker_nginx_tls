@@ -7,7 +7,7 @@ name: Docker
 
 on:
   schedule:
-    - cron: '33 2 * * *'
+    - cron: '1 2 3 * *'
   push:
     branches: [ "master", "Haz001-dockerio-test" ]
     # Publish semver tags as releases.
